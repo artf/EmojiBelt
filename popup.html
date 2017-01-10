@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>EmojiBelt</title>
+    <style>
+      body {
+        color: #333;
+        font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+        font-size: 12px;
+        margin: 0;
+      }
+
+      .link {
+        color: inherit;
+        text-decoration: none;
+        color: #1B95E0;
+      }
+
+      .popup-panel {
+        width: 300px;
+      }
+
+      .ext-title,
+      .ext-options,
+      .shortcuts,
+      footer {
+        padding: 0 10px;
+      }
+
+      .ext-title {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .divider {
+          margin: 0.5rem 0 1rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .shortcuts-list {
+        padding: 0 15px;
+      }
+
+      .love-emoji {
+        font-size: 10px;
+      }
+
+      .row::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
+      .col-6 {
+        float: left;
+        width: 50%;
+      }
+
+      .opt-right {
+        text-align: right;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+        color: rgba(0, 0, 0, 0.75)
+      }
+
+      kbd {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        padding: 0 3px;
+      }
+
+      .disInput {
+        z-index: -100;
+        position:absolute;
+        top:-1000px;
+        left:-1000px;
+      }
+    </style>
+    <script src="overwrite-ajax.js"></script>
+  </head>
+  <body>
+    <div class="popup-panel">
+      <div class="ext-title">
+        <b>EmojiBelt 😀</b>
+      </div>
+
+      <div class="divider"></div>
+      <!--
+      <div class="ext-options">
+        <div class="row">
+          <div class="col-6 opt-left">Disable EmojiBelt</div>
+          <div class="col-6 opt-right">
+            <input class="disInput" type="checkbox" name="_">
+            <input type="checkbox" name="disableExt">
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      -->
+
+      <div class="shortcuts">
+        <div class="shortcuts-title">
+          <b>Shortcuts</b>
+        </div>
+        <div class="shortcuts-body">
+          <ul class="shortcuts-list">
+            <li>When the input is focused press <kbd>ALT + W</kbd> to open the EmojiBelt panel</li>
+            <li>When the EmojiBelt panel is opened press <kbd>ESC</kbd> to close it</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <a class="link" href="https://twitter.com/artur_arseniev"></a>
+        Made by <a class="link" href="https://twitter.com/artur_arseniev" target="_blank">Artur Arseniev</a>
+      </footer>
+    </div>
+  </body>
+</html>
